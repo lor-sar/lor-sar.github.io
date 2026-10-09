@@ -1,15 +1,20 @@
-html,body{margin:0;padding:0}
-body{background-color: rgba(252, 252, 252, 1);font-size: 90%; font-family: helvetica, sans-serif;color:#141823;text-align:left; margin:50px 80px 60px; max-width: 770px;text-align:justify}
-p{margin:10px 0px 10px}
+:root{color-scheme:light;--ink:#282d32;--blue:#234d70;--line:#dce2e7}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:105px}body{margin:0;color:var(--ink);background:#fff;font:17px/1.65 Georgia,'Times New Roman',serif}a{color:var(--blue);text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#102c43}a:focus-visible{outline:3px solid #427ba5;outline-offset:5px}.masthead{position:sticky;top:0;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);z-index:10}.navigation{max-width:1080px;margin:auto;padding:22px 32px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:Arial,Helvetica,sans-serif}.name{font-size:20px;font-weight:700;color:var(--ink);text-decoration:none}nav{display:flex;gap:25px}nav a{font-size:15px;text-decoration:none}main{max-width:1020px;padding:0 32px;margin:auto}section{padding:38px 0 42px;border-bottom:1px solid var(--line)}.about{display:grid;grid-template-columns:310px 1fr;gap:46px;padding-top:55px}.portrait img{display:block;width:100%;height:auto;border-radius:2px}.biography h1{margin:0 0 10px;font-size:34px;line-height:1.2;font-weight:normal}.position{font-family:Arial,Helvetica,sans-serif;color:#5d6872;margin-top:0;font-size:16px}.biography p{margin-bottom:18px}address{font:14px/1.8 Arial,Helvetica,sans-serif;color:#5d6872}h2{font-family:Arial,Helvetica,sans-serif;font-size:26px;line-height:1.3;margin:0 0 26px;color:#2b3844;font-weight:600}h3{font-family:Arial,Helvetica,sans-serif;font-size:17px;font-weight:600;margin:26px 0 15px}ol{padding-left:28px;margin:0}li{padding-left:8px;margin-bottom:23px}li p{margin:0}li i{font-style:normal;font-weight:bold}li::marker{color:#677580;font:14px Arial,Helvetica,sans-serif}table{width:100%;border-collapse:collapse;font:15px/1.6 Arial,Helvetica,sans-serif}td{padding:11px 0;vertical-align:top;border-bottom:1px solid #edf0f2}td:first-child{width:175px;padding-right:25px;color:#606d77}tr:last-child td{border-bottom:0}footer{max-width:1020px;margin:auto;padding:25px 32px 40px;display:flex;justify-content:space-between;font:14px Arial,Helvetica,sans-serif;color:#68737c}.skip{position:absolute;left:15px;top:-100px;background:white;padding:10px;z-index:20}.skip:focus{top:10px}@media(max-width:760px){.navigation{padding:15px 22px;flex-wrap:wrap;gap:12px}nav{gap:20px;flex-wrap:wrap}nav a{font-size:14px}main{padding:0 22px}.about{grid-template-columns:1fr;gap:25px;padding-top:30px}.portrait{max-width:360px}.biography h1{font-size:30px}td:first-child{width:110px;padding-right:15px}footer{padding:25px 22px}html{scroll-padding-top:140px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
-h1{margin: 20x 0px 20px;font-size:200%;
-color:#000000;font-weight: normal;line-height:160%}
-h2{margin: 20x 0px 20px;font-size:130%;color:#000000;font-weight: normal;line-height:160%}
-a:link {
-     color:#2471A3;
-     text-decoration:none;
-}
-a:visited {
-     color:#2471A3;
-     text-decoration:none;
-}
+/* Typography and spacing inspired by svmiller.com. */
+body{font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:16px;font-weight:300;line-height:1.5}
+.navigation{padding-top:12px;padding-bottom:12px;font-family:'Open Sans',Helvetica,Arial,sans-serif}
+.name{font-family:'Titillium Web',sans-serif;font-size:25px;font-weight:400}
+nav a{font-size:14px;font-weight:400;text-transform:uppercase;letter-spacing:.035em}
+section{padding:24px 0 26px}
+.about{grid-template-columns:280px 1fr;gap:34px;padding-top:32px;padding-bottom:28px}
+.biography h1{font-family:'Titillium Web',sans-serif;font-size:32px;font-weight:200;line-height:1.2;margin-bottom:8px}
+.position{font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:15px;line-height:1.45;margin-bottom:12px}
+.biography p{margin-top:0;margin-bottom:12px}
+address{font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:14px;line-height:1.55}
+h2{font-family:'Titillium Web',sans-serif;font-size:28px;font-weight:300;line-height:1.2;margin-bottom:16px}
+h3{font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:16px;font-weight:600;margin:18px 0 10px}
+li{margin-bottom:15px}li:last-child{margin-bottom:0}li i{font-weight:600}li::marker{font-family:'Open Sans',Helvetica,Arial,sans-serif}
+table{font-family:'Open Sans',Helvetica,Arial,sans-serif;font-size:15px;line-height:1.45}td{padding:7px 0}
+footer{font-family:'Open Sans',Helvetica,Arial,sans-serif;padding-top:18px;padding-bottom:26px}
+html{scroll-padding-top:85px}
+@media(max-width:760px){.navigation{padding:12px 22px;gap:8px}nav{gap:16px}.about{grid-template-columns:1fr;gap:20px;padding-top:24px}.portrait{max-width:280px}.biography h1{font-size:30px}html{scroll-padding-top:125px}}
